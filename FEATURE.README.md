@@ -1,0 +1,3 @@
+# Features
+
+## Wikipedia search widget.
