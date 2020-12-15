@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Dropdown from "../shared/dropdown";
 import TranslatorConvertor from "./translatorConvertor";
-// AIzaSyCHUCmpR7cT_yDFHC98CZJy2LTms-IwDlM
+// 
 
 const options = [
   { label: "Hindi", value: "hi" },
@@ -11,17 +11,14 @@ const options = [
 const Translator = () => {
   const [selectedLanguage, setSelectedLanguage] = useState(options[0]);
   const [userText, setUserText] = useState("");
+  const inputChangeHandler = (e) => {
+    const text = e.target.value;
+    setUserText(text);
+  };
   return (
     <React.Fragment>
       <div>
-        <input
-          type="text"
-          value={userText}
-          onChange={(e) => {
-              console.log
-            setUserText(e.target.value);
-          }}
-        />
+        <input type="text" value={userText} onChange={inputChangeHandler} />
       </div>
       <div>
         <Dropdown
