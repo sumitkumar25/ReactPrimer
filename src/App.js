@@ -21,18 +21,11 @@ function App() {
         <h1>React Components</h1>
       </header>
       <main>
-        <Translator/>
-        {/* <FeatureYoutube /> */}
-        <Dropdown
-          options={options}
-          selected={selected}
-          onSelectedChange={setSelected}
-        />
+        
         <FeatureWikipedia />
-        {/* <TestFunctionalComponent></TestFunctionalComponent> */}
+        <Translator />
       </main>
     </div>
   );
 }
-
 export default App;
